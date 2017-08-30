@@ -1,0 +1,36 @@
+<h1>Vacnote#organize</h1>
+<p>Find me in app/views/vacnote/organize.html.erb</p>
+
+
+<% var="Sameer" %>
+<%= "Hello #{var}" %>
+</br>
+</br>
+<%= "Loop o/p: returns the end result" %></br>
+<%=
+3.times do |n|
+  puts n
+  end
+%>
+
+</br>
+</br>
+<%= "Loop o/p: returns number of times" %></br>
+<%
+@myarray.each do |n| %>
+<%= n %>
+<% end %>
+
+</br>
+</br>
+<%= "Links - Plain HREF" %></br>
+
+<a href="/vacnote/create"> Go to Create</a> </br>
+
+</br>
+</br>
+<%= "Links - Ruby helper method" %></br>
+
+<%= link_to("Go to Share", {:action => 'share'})%> </br>
+
+<%= link_to("Go to Share with Parameters", {:action => 'share', :id => 3, :page => 5 })%> </br>
